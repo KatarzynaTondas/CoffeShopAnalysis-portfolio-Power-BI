@@ -189,7 +189,7 @@ Odbiorcy raportu:
 
 - Wskaźniki KPI (marża, rentowność, liczba transakcji)
   
-### Reguły i standardy
+## 6. Reguły i standardy
 
 - Nazewnictwo miar: używamy polskich nazw, np. "Suma sprzedaży".
 
