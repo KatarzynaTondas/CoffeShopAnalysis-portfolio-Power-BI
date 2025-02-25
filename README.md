@@ -28,4 +28,45 @@ Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 
 ## 3. Model danych
 # Relacje między tabelami:
-![image](https://github.com/user-attachments/assets/7a1e52eb-053c-48f1-b410-3a24edaf76a0)
+![image](https://github.com/user-attachments/assets/4a77de08-be28-4234-9ec7-f0fc317432c6)
+
+# Struktura tabel:
+# Produkty
+
+- Produkt ID
+
+- Nazwa produktu
+
+- Kategoria
+
+- Rodzaj produktu
+
+- Rozmiar
+
+- Zawiera mleko
+
+- Zawiera orzechy
+
+# Sprzedaż
+
+- Data zamówienia
+
+- Data księgowania
+
+- ID Zamówienia
+
+- Sklep ID
+
+- Produkt ID
+
+- Liczba jednostek
+
+- Cena jednostkowa
+
+- Cena zakupu
+
+- Wartość sprzedaży
+
+- Koszt
+
+- Zysk
