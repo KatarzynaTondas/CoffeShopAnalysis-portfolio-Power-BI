@@ -1,1 +1,1 @@
-# Portfolio
+# Projekt: Coffe Shop - analiza
