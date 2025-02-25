@@ -6,7 +6,7 @@ Projekt Power BI służy do analizy sprzedaży produktów w różnych sklepach. 
 
 Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 
-# Kluczowe pytania biznesowe:
+### Kluczowe pytania biznesowe:
 
 - Jakie są trendy sprzedażowe w ujęciu miesięcznym i rocznym?
 
@@ -27,11 +27,11 @@ Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 - Dane są ładowane w trybie importu.
 
 ## 3. Model danych
-# Relacje między tabelami:
+### Relacje między tabelami:
 ![image](https://github.com/user-attachments/assets/4a77de08-be28-4234-9ec7-f0fc317432c6)
 
-# Struktura tabel:
-# Produkty
+### Struktura tabel:
+#### Produkty
 
 - Produkt ID
 
@@ -47,7 +47,7 @@ Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 
 - Zawiera orzechy
 
-# Sprzedaż
+#### Sprzedaż
 
 - Data zamówienia
 
@@ -70,3 +70,129 @@ Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 - Koszt
 
 - Zysk
+
+#### Sklepy
+
+- Sklep ID
+
+- Miasto
+
+- Miasto Skrót
+
+- Adres
+
+- Kod Pocztowy
+
+- Województwo
+
+- Wielkość miasta
+
+- Segment miasta
+
+#### Kalendarz
+
+- Date
+
+- Dzień
+
+- Nr. dnia tygodnia
+
+- Dzień tygodnia
+
+- Nr. tygodnia
+
+- Nr. miesiąca
+
+- Miesiąc
+
+- Kwartał
+
+- Rok
+
+- Rok miesiąc
+
+- Rok miesiąc numer
+
+- Początek miesiąca
+
+- Koniec miesiąca
+
+- Czy weekend
+  
+## 4. Miary DAX
+
+### Podstawowe miary:
+
+- Suma sprzedaży: SUM(Sprzedaz[Wartość sprzedaży])
+
+- Średnia sprzedaż na transakcji:
+
+  DIVIDE([Suma sprzedaży], [Liczba transakcji])
+  Liczba transakcji: COUNT(Sprzedaz[ID Zamówienia])
+
+- Marża procentowa:
+
+  DIVIDE(SUM(Sprzedaz[Zysk]), SUM(Sprzedaz[Wartość sprzedaży]))
+  
+-  YoY sprzedaż (rok do roku):
+-  
+  VAR SprzedazObecny = [Suma sprzedaży]
+  VAR SprzedzPoprzedni =
+    CALCULATE(
+      [Suma sprzedaży],
+      SAMEPERIODLASTYEAR(Kalendarz[Date])
+    )
+  RETURN
+  DIVIDE(SprzedazObecny - SprzedzPoprzedni, SprzedzPoprzedni, 0)
+
+- Liczba produktów: DISTINCTCOUNT(Produkty[Produkt ID])
+
+- Produkty zawierające mleko:
+
+  CALCULATE([Liczba produktów], Produkty[Zawiera mleko] = "tak")
+
+- Sprzedaż YTD: TOTALYTD([Suma sprzedaży], Kalendarz[Date])
+
+- Sprzedaż MTD: TOTALMTD([Suma sprzedaży], Kalendarz[Date])
+
+## 5. Raporty i wizualizacje
+
+### Strony raportu:
+
+- Home - strona wstępna
+
+- Przegląd sprzedaży - główne wskaźniki KPI, trend sprzedaży, marża i sprzedaż 
+
+- Analiza produktów - sprzedaż według kategorii, top produkty, MTD, YTD.
+
+- Drzewo dekompozycji - indeks sezonowości, sprzedaż w ujęciu miesięcznym.
+  
+### Kluczowe wizualizacje:
+
+- Wykres liniowy sprzedaży miesięcznej
+
+- Ranking top N produktów
+
+- Wskaźniki KPI (marża, rentowność, liczba transakcji)
+  
+### Reguły i standardy
+
+- Nazewnictwo miar: używamy polskich nazw, np. "Suma sprzedaży".
+
+- Formatowanie wartości: wartości walutowe w złotówkach, procenty z dwoma miejscami po przecinku.
+
+# 7. Instrukcja użytkowania raportu
+
+- Użytkownicy mogą korzystać z filtrów (np. według miasta, produktu, daty) w celu dostosowania widoku raportu.
+  
+- Kliknięcie w konkretny element raportu (np. produkt, sklep) wyświetla szczegółowe dane związane z wybranym elementem.
+  
+# 8. Administracja i utrzymanie
+ 
+- Osoba odpowiedzialna: Katarzyna Tondaś, Analityk BI
+
+- Monitorowanie błędów: logowanie problemów w SharePoint.
+
+- Optymalizacja wydajności: regularne sprawdzanie miar DAX i optymalizacja zapytań.
+
+
