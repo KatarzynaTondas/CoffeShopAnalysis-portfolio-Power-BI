@@ -8,10 +8,10 @@ Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 
 # Kluczowe pytania biznesowe:
 
-Jakie są trendy sprzedażowe w ujęciu miesięcznym i rocznym?
+- Jakie są trendy sprzedażowe w ujęciu miesięcznym i rocznym?
 
-Które produkty przynoszą największy zysk?
+- Które produkty przynoszą największy zysk?
 
-Jak wygląda sezonowość sprzedaży?
+- Jak wygląda sezonowość sprzedaży?
 
-Jaki jest udział poszczególnych kategorii produktowych w sprzedaży?
+- Jaki jest udział poszczególnych kategorii produktowych w sprzedaży?
