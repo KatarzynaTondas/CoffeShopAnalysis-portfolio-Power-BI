@@ -127,29 +127,37 @@ Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 
 - Średnia sprzedaż na transakcji:
 
-  DIVIDE([Suma sprzedaży], [Liczba transakcji])
-  Liczba transakcji: COUNT(Sprzedaz[ID Zamówienia])
+    DIVIDE(
+    [Suma sprzedaży],
+    [Liczba transakcji]
+    )
 
 - Marża procentowa:
 
-  DIVIDE(SUM(Sprzedaz[Zysk]), SUM(Sprzedaz[Wartość sprzedaży]))
+   DIVIDE(
+    SUM(Sprzedaz[Zysk]),
+    SUM(Sprzedaz[Wartość sprzedaży])
+    )
   
 -  YoY sprzedaż (rok do roku):
--  
-  VAR SprzedazObecny = [Suma sprzedaży]
-  VAR SprzedzPoprzedni =
-    CALCULATE(
-      [Suma sprzedaży],
-      SAMEPERIODLASTYEAR(Kalendarz[Date])
-    )
+  
+    VAR SprzedazObecny = [Suma sprzedaży]
+    VAR SprzedzPoprzedni =
+        CALCULATE(
+          [Suma sprzedaży],
+          SAMEPERIODLASTYEAR(Kalendarz[Date])
+        )
   RETURN
-  DIVIDE(SprzedazObecny - SprzedzPoprzedni, SprzedzPoprzedni, 0)
+      DIVIDE(SprzedazObecny - SprzedzPoprzedni, SprzedzPoprzedni, 0)
 
 - Liczba produktów: DISTINCTCOUNT(Produkty[Produkt ID])
 
 - Produkty zawierające mleko:
 
-  CALCULATE([Liczba produktów], Produkty[Zawiera mleko] = "tak")
+    CALCULATE( 
+      [Liczba produktów],
+      Produkty[Zawiera mleko] = "tak"
+      )
 
 - Sprzedaż YTD: TOTALYTD([Suma sprzedaży], Kalendarz[Date])
 
