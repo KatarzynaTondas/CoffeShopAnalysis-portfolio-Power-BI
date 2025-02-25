@@ -2,9 +2,15 @@
 
 ## 1. Opis projektu
 
-Projekt Power BI służy do analizy sprzedaży produktów w różnych sklepach. Raport pozwala na śledzenie kluczowych wskaźników, takich jak wartość sprzedaży, rentowność, liczba transakcji oraz analiza sezonowości.
+Projekt Power BI służy do analizy sprzedaży produktów w różnych sklepach. Raport pozwala na śledzenie kluczowych wskaźników, takich jak wartość sprzedaży, rentowność, liczba transakcji oraz analiza sezonowości. Dodatkowo umożliwia identyfikację najbardziej dochodowych produktów, lokalizacji oraz sezonowych trendów sprzedaży. Dzięki dynamicznym filtrom użytkownicy mogą dostosować analizę do swoich potrzeb i uzyskać szczegółowe informacje na temat sprzedaży w różnych ujęciach.
 
-Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
+Odbiorcy raportu: 
+
+- Zarząd,
+  
+- Dział sprzedaży,
+  
+- Analitycy biznesowi.
 
 ### Kluczowe pytania biznesowe:
 
@@ -189,13 +195,13 @@ Odbiorcy raportu: Zarząd, dział sprzedaży, analitycy biznesowi.
 
 - Formatowanie wartości: wartości walutowe w złotówkach, procenty z dwoma miejscami po przecinku.
 
-# 7. Instrukcja użytkowania raportu
+## 7. Instrukcja użytkowania raportu
 
 - Użytkownicy mogą korzystać z filtrów (np. według miasta, produktu, daty) w celu dostosowania widoku raportu.
   
 - Kliknięcie w konkretny element raportu (np. produkt, sklep) wyświetla szczegółowe dane związane z wybranym elementem.
   
-# 8. Administracja i utrzymanie
+## 8. Administracja i utrzymanie
  
 - Osoba odpowiedzialna: Katarzyna Tondaś, Analityk BI
 
