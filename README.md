@@ -137,8 +137,7 @@ Dane są ładowane w trybie importu, co zapewnia szybki dostęp do dużych zbior
 ### Podstawowe miary:
 
 - Suma sprzedaży:
-  
- ![image](https://github.com/user-attachments/assets/2aceff7b-9844-40a5-8d50-9bde510c7f31)
+![image](https://github.com/user-attachments/assets/2aceff7b-9844-40a5-8d50-9bde510c7f31)
 
 - Średnia sprzedaż na transakcji:
 
@@ -149,7 +148,7 @@ Dane są ładowane w trybie importu, co zapewnia szybki dostęp do dużych zbior
 ![image](https://github.com/user-attachments/assets/63c8dd4e-b352-431b-8365-8aae82612f61)
   
 -  YoY sprzedaż (rok do roku):
-  
+
 ![image](https://github.com/user-attachments/assets/fbb892ce-cb38-46d5-aeec-0e521cd6bc4e)
 
 - Liczba produktów:
