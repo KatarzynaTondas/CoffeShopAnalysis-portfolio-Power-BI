@@ -137,6 +137,7 @@ Dane są ładowane w trybie importu, co zapewnia szybki dostęp do dużych zbior
 ### Podstawowe miary:
 
 - Suma sprzedaży:
+  
 ![image](https://github.com/user-attachments/assets/2aceff7b-9844-40a5-8d50-9bde510c7f31)
 
 - Średnia sprzedaż na transakcji:
