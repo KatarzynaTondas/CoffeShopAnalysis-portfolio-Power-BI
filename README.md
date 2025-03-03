@@ -206,6 +206,6 @@ Dane są ładowane w trybie importu, co zapewnia szybki dostęp do dużych zbior
 - Optymalizacja wydajności: regularne sprawdzanie miar DAX i optymalizacja zapytań.
 
 ### Źródło danych:
-Projekt wykonany w ramach kursu: 5-DNIOWE WYZWANIE POWER BI Z ELEMENTAMI AI od https://odczarujpowerbi.pl/ (Dane rozbudowane o szerszy okres czasu i dodatkowe dane)
+Projekt wykonany w ramach kursu: 5-DNIOWE WYZWANIE POWER BI Z ELEMENTAMI AI od https://odczarujpowerbi.pl/ a następnie rozbudowany (Dane zawierają szerszy okres czasu i dodatkowe dane niż dane źródłowe z kursu)
 
 
