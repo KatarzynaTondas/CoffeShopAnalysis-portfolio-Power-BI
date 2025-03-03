@@ -208,6 +208,6 @@ Dane są ładowane w trybie importu, co zapewnia szybki dostęp do dużych zbior
 ### 9. Źródło danych:
 KAGGLE: https://www.kaggle.com/datasets/ahmedabbas757/coffee-sales?resource=download
 - Dane dostosowane i przetłumaczone na język polski
-- Projekt wykonany w ramach kursu: Power BI i AI od https://odczarujpowerbi.pl/
+- Projekt wykonany w ramach kursu: 5-DNIOWE WYZWANIE POWER BI Z ELEMENTAMI AI od https://odczarujpowerbi.pl/
 
 
