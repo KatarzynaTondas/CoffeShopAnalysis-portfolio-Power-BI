@@ -206,8 +206,6 @@ Dane są ładowane w trybie importu, co zapewnia szybki dostęp do dużych zbior
 - Optymalizacja wydajności: regularne sprawdzanie miar DAX i optymalizacja zapytań.
 
 ### Źródło danych:
-KAGGLE: https://www.kaggle.com/datasets/ahmedabbas757/coffee-sales?resource=download
-- Dane rozbudowane o szerszy okres czasu i dodatkowe dane oraz przetłumaczone na język polski
-- Projekt wykonany w ramach kursu: 5-DNIOWE WYZWANIE POWER BI Z ELEMENTAMI AI od https://odczarujpowerbi.pl/
+Projekt wykonany w ramach kursu: 5-DNIOWE WYZWANIE POWER BI Z ELEMENTAMI AI od https://odczarujpowerbi.pl/ (Dane rozbudowane o szerszy okres czasu i dodatkowe dane)
 
 
